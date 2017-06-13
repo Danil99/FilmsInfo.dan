@@ -1,0 +1,452 @@
+body
+  background-color: #f1f1f1
+  font-family: 'Arial', sans-serif
+
+*, h1, h2, h3, h4, p, span, a, li, ul
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+
+main
+  header
+    background-color: #111
+    padding: 15px 0
+    .header
+      margin: 0 auto
+      width: 1000px
+      display: -webkit-flex
+      display: -ms-flex
+      display: flex
+      align-items: center
+      justify-content: space-between
+      h1
+        color: lightskyblue
+        font-size: 35px
+      nav
+        ul
+          li
+            margin-right: 30px
+            display: inline-block
+            a
+              font-size: 17px
+              color: #fff
+              text-decoration: none
+              transition: all .15s ease
+              &:hover, &.active
+                color: lightskyblue
+  .search-wrap
+    background-color: #fff
+    padding: 7px 0
+    position: relative
+    .search
+      width: 1000px
+      margin: 0 auto
+      text-align: center
+      input
+        padding: 7px 15px
+        outline: none
+        width: calc(100% - 200px)
+        border: 0
+        font-size: 18px
+        color: #999
+        font-weight: lighter
+        border-bottom: 1px solid transparent
+        transition: all .15s ease
+        &:focus
+          border-bottom-color: lightskyblue
+      button
+        padding: 3px 10px
+        font-size: 18px
+        color: #999
+        border: 0
+        background-color: transparent
+        height: 100%
+        outline: none
+        cursor: pointer
+        transition: all .15s ease
+        &:hover
+          color: lightskyblue
+
+.exact-wrap
+  width: 1200px
+  margin: 20px auto
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+
+.exact-Search
+  margin-bottom: 20px
+  padding: 10px
+  width: 590px
+  height: 250px
+  background-color: #fff
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1)
+  img
+    height: 100%
+    width: auto
+  .es-descr-film
+    padding: 5px 20px
+    h1, a
+      display: block
+      text-decoration: none
+      text-align: center
+      color: #555
+      font-weight: 100
+      font-size: 24px
+      line-height: 28px
+      margin-bottom: 10px
+      transition: all .15s ease
+      &:hover
+        color: #999
+    span
+      font-size: 16px
+      color: #777
+      margin: 0 10px 0 15px
+      position: relative
+      &::after
+        content: ''
+        position: absolute
+        left: -10px
+        top: 50%
+        transform: translate(0, -50%)
+        width: 5px
+        height: 5px
+        background-color: #aaa
+        border-radius: 50%
+    p
+      font-size: 16px
+      margin-top: 10px
+      color: #777
+      font-weight: lighter
+      text-align: justify
+      line-height: 23px
+
+.filters
+  display: inline-block
+  position: relative
+  margin-right: 20px
+  h2
+    display: inline-block
+    border: 2px solid #aaa
+    border-radius: 5px
+    font-weight: lighter
+    font-size: 18px
+    color: #777
+    letter-spacing: 1px
+    cursor: pointer
+    padding: 3px 13px
+
+  .filters-wrapper
+    position: absolute
+    left: -50%
+    top: 35px
+    width: 200px
+    background-color: #fff
+    border: 1px solid #aaa
+    border-radius: 5px
+    padding: 10px 20px
+    .filter-items
+      display: -webkit-flex
+      display: -ms-flex
+      display: flex
+      align-items: center
+      justify-content: space-between
+    span
+      font-size: 18px
+      color: #777
+      font-weight: lighter
+      margin-right: 15px
+    select
+      width: 100%
+      padding: 3px
+      background-color: transparent
+      text-align: center
+      font-size: 15px
+      color: #777
+
+.filmPage
+  width: 1100px
+  margin: 30px auto
+  background-color: #fff
+  border: 1px solid #ccc
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1)
+  padding: 15px 10px
+  border-radius: 5px
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  justify-content: space-between
+  .cont-img
+    width: 230px
+    border: 1px solid #ccc
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1)
+    border-radius: 5px
+    overflow: hidden
+    img
+      width: 100%
+      height: auto
+      display: block
+      user-select: none
+  .filmPage-info
+    width: calc(100% - 230px)
+    padding: 0 30px
+    h1
+      font-size: 30px
+      color: #888
+      line-height: 36px
+      font-weight: lighter
+      display: block
+      text-align: center
+    .info-content
+      margin-top: 15px
+      display: -webkit-flex
+      display: -ms-flex
+      display: flex
+      flex-direction: column
+      .info-items
+        display: -webkit-flex
+        display: -ms-flex
+        display: flex
+        margin-bottom: 4px
+        >div
+          width: 700px
+          display: flex
+          flex-wrap: wrap
+        h3
+          color: #222
+          font-size: 16px
+          width: 120px
+          font-weight: lighter
+        span
+          font-size: 16px
+          color: #555
+          margin: 0
+          position: relative
+          margin-right: 7px
+          line-height: 22px
+          a:hover
+            text-decoration: none
+    .overview-film
+      margin-top: 20px
+      h3
+        color: #444
+        font-size: 18px
+        font-weight: lighter
+      p
+        font-size: 17px
+        margin-top: 7px
+        color: #555
+        font-weight: lighter
+        text-align: justify
+        line-height: 22px
+
+section.login
+  width: 350px
+  position: absolute
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%)
+  h1
+    font-size: 35px
+    font-weight: 100
+    margin-bottom: 10px
+  label
+    input
+      font-size: 15px
+      padding: 8px 10px
+      margin-bottom: 10px
+      width: 100%
+      border-radius: 5px
+      border: 1px solid #ccc
+      background-color: #fff
+    span
+      font-size: 15px
+      font-weight: bold
+      margin-bottom: 5px
+      display: inline-block
+  span
+    display: block
+    text-align: center
+    margin-bottom: 5px
+    font-weight: bold
+  button
+    background-color: cornflowerblue
+    font-size: 17px
+    padding: 8px 25px
+    cursor: pointer
+    font-weight: bold
+    border-radius: 10px
+    border: 1px solid #ccc
+    transition: all .15s ease
+    &:hover
+      background-color: lightskyblue
+
+
+// User Style
+
+.userInfo
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  align-items: center
+  position: relative
+  h3
+    display: block
+    margin-right: 10px
+    color: #fff
+    font-weight: 100
+    font-size: 18px
+    cursor: pointer
+    &:hover, &.active
+      color: lightskyblue
+  .img-wrap
+    width: 50px
+    height: 50px
+    border-radius: 50%
+    img
+      border-radius: 50%
+      width: 100%
+      height: 100%
+
+  .user-settings
+    position: absolute
+    left: -150px
+    top: 0
+    background-color: #222
+    border: 1px solid #777
+    border-radius: 5px
+    padding: 5px 15px
+    z-index: 10
+    width: 140px
+    a
+      display: block
+      margin: 7px 0
+      font-size: 17px
+      color: #fff
+      text-decoration: none
+      transition: all .15s ease
+      &:hover, &.active
+        color: lightskyblue
+
+header
+  .log-button
+    display: block
+    margin: 7px 0
+    font-size: 17px
+    color: #fff
+    text-decoration: none
+    border-bottom: 1px solid #fff
+    transition: all .15s ease
+    padding: 2px
+    &:hover, &.active
+      color: lightskyblue
+      border-bottom-color: lightskyblue
+      border-bottom: 0
+
+
+// Settings
+
+.settings
+  position: relative
+  text-align: center
+  width: 700px
+  margin: 30px auto
+  background-color: #fff
+  border-radius: 5px
+  border: 1px solid #ccc
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1)
+  padding: 15px 20px
+  overflow: hidden
+  .img-wrap
+    width: 100px
+    height: 100px
+    border-radius: 50%
+    overflow: hidden
+    user-select: none
+    margin: 0 auto
+    border: 1px solid #ccc
+    img
+      width: 100%
+      height: 100%
+  .title
+    h2
+      font-weight: 100
+      letter-spacing: 1px
+      font-size: 27px
+      color: #555
+      margin-top: 5px
+
+  .sett-param
+    text-align: left
+    .sett
+      display: -webkit-flex
+      display: -ms-flex
+      display: flex
+      align-items: center
+      margin-top: 5px
+      h2
+        font-size: 18px
+        color: #555
+        width: 120px
+        user-select: none
+      span
+        width: calc(100% - 120px)
+        line-height: 19px
+        color: #555
+        font-size: 15px
+  form
+    margin-top: 10px
+    label
+      display: -webkit-flex
+      display: -ms-flex
+      display: flex
+      align-items: center
+      margin-bottom: 10px
+      h2
+        font-size: 18px
+        color: #555
+        width: 120px
+        user-select: none
+      input
+        font-size: 15px
+        padding: 5px 10px
+        width: 300px
+        border-radius: 5px
+        border: 1px solid #ccc
+        background-color: #fff
+    button
+      cursor: pointer
+      padding: 3px 15px
+      border-radius: 5px
+      border: 1px solid #777
+      color: #777
+      font-size: 19px
+      transition: all .15s ease
+      background-color: transparent
+      float: right
+      &:hover
+        transform: rotate(5deg)
+      &:active
+        transform: rotate(0)
+  .edit
+    position: absolute
+    right: 10px
+    top: 10px
+    h2
+      display: block
+      padding: 3px 15px
+      border-radius: 5px
+      border: 1px solid #777
+      color: #777
+      font-size: 19px
+      cursor: pointer
+      transition: all .15s ease
+      &:hover
+        transform: rotate(5deg)
+      &:active
+        transform: rotate(0)

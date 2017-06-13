@@ -1,0 +1,6 @@
+# Package
+
+Back-end/node_modules/
+Front-end/node_modules/
+Back-end/yarn.lock
+Front-end/yarn.lock
