@@ -1,18 +1,19 @@
 # FilmsInfo.dan
 
 ### Start Front-end:
-```nodemon server.js```
+```
+#Server
+nodemon server.js
+
+#WebPack
+webpack -w
+```
 
 ### Start Back-end:
-```npm run server```
-
-
 ```
-#WebPack
-Start Front-end: webpack -w
-```
+#Server
+npm run server
 
-```
 #Babel
-Start Back-end: npm run watch
+npm run watch
 ```
