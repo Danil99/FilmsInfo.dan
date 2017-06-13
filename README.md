@@ -3,10 +3,10 @@
 ```Start Front-end: nodemon server.js```
 ```Start Back-end: npm run server```
 
-#WebPack
+##WebPack
 
 ```Start Front-end: webpack -w```
 
-#Babel
+##Babel
 
 ```Start Back-end: npm run watch```
