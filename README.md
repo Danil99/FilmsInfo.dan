@@ -1,7 +1,9 @@
 # FilmsInfo.dan
 
-Start Front-end: ```nodemon server.js```
-Start Back-end: ```npm run server```
+Start Front-end:
+```nodemon server.js```
+Start Back-end:
+```npm run server```
 
 ```
 #WebPack
